@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mom and Pop's Pizza Shoppe</title>
+    <link href="css/ui-darkness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <link href="css/addedstyles.css" rel="stylesheet">
+
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+
+<h2 id='title'>Mom and Pop's Pizza Shoppe</h2>
+<img src="img/pizza.png"/>
+
+<button id="phone"><a href="tel:5555555555">Call Now</a></button>
+<span id="url"></span>
+<div id="display">
+
+
+</div>
+<div id="accordion">
+
+    <h3>About Us</h3>
+
+    <div id="about">
+        <p id='about_text'>
+            Mom and Pop's Pizza Shoppe has been on the block for over 50 years. Serving up the only deep fried pie in existence.
+            Don't Forget We have an awe inspiring beer selection in house, including 24 of our original brews. In our 50 years we have
+            been in business we have entered our pie, and brew into many local challenges. Our Pizza has won 27 different Awards. and our
+            Brews have topped in the TOP TEN in the nation for taste and wonderfulness.
+
+        </p>
+
+    </div>
+
+    <h3>Menu</h3>
+    <div id="menu">
+    <a href="#" id='btn_crust'>Pizza Crusts</a><br/>
+    <ul id="show_crust">
+        <li id='thin'>
+
+          <div data-product="2102" class="product">
+              <span data-name="Thin Crust">Thin Crust</span>
+              <span data-price="10.00">$10.00</span><br/>
+            <span data-description="desc">Laser Sliced Thin Crust, with chunks of flaky buttery goodness and blessed by a shaman</span>
+
+            </div></li>
+
+        <li id='original'><div data-product="2103" class="product">
+            <span data-name="Hand Tossed Original Crust">Hand Tossed Original Crust</span>
+            <span data-price="10.00">$10.00</span><br/>
+            <span data-description="desc">Prepared from the same wheat and nectar Zeus himself ate on his throne on Mt. Olympus </span>
+        </div></li>
+
+
+        <li id='fried'><div data-product="2104" class="product">
+            <span data-name="Deep Fried Crust">Deep Fried Crust</span>
+            <span data-price="10.00" class="price">10.00</span><br/>
+            <span data-description="desc">Once your pizza is assembled it is placed in our patented pizza fryer and is fried to perfection in a steaming hot vat of bacon grease.   </span>
+        </div></li>
+    </ul>
+
+   <a href="#" id='btn_top'>Pizza Toppings</a><br/>
+            <ul id="show_top">
+
+                <li id='pepperoni' class="topping"><div data-product="2200" class="product">
+                    <span data-name="pepperoni">Pepperoni</span>
+                    <span data-price="8.00" class="price">10.00</span><br/>
+                    <span data-description="desc">Thinly Sliced Preserved Pork.</span>
+                </div></li>
+
+                <li id='sausage'><div data-product="2201" class="product">
+                    <span data-name="sausage">Sausage</span>
+                    <span data-price="8.00" class="price">10.00</span><br/>
+                    <span data-description="desc">Yep, you guessed it. Sausage. </span>
+                </div></li>
+                <li id='garlic'><div data-product="2202" class="product">
+                    <span data-name="garlic">Garlic</span>
+                    <span data-price="3.00" class="price">3.00</span><br/>
+                    <span data-description="desc">Garlic: Wards off Vampires. Number one good!  </span>
+                </div></li>
+
+                <li id='cheese'><div data-product="2202" class="product">
+                    <span data-name="cheese">Extra Cheese</span>
+                    <span data-option="5.00">$5.00 </span><br/>
+                    <span data-description="desc">Double and a halves the cheese amount from 1 to 2.5 lbs.</span>
+                </div></li>
+
+            </ul>
+
+
+
+
+
+        <a href="#" id='btn_drink'>Drinks</a>
+        <ul id="show_drink">
+
+            <li id='coke'><div data-product="2202" class="product">
+                <span data-name="Coke">Coca-Cola</span>
+                <span data-price="100.00" class="price">$100.00</span><br/>
+
+                <span data-description="desc">Original 1892 recipe!  </span>
+            </div></li>
+
+            <li id='sprite'><div data-product="2203" class="product">
+                <span data-name="sprite">Sprite</span>
+                <span data-price="1.00" class="price">$1.00</span><br/>
+
+                <span data-description="desc">Lemon limey  </span>
+            </div></li>
+
+
+
+            <li id='lemonade'><div data-product="2204" class="product">
+                <span data-name="lemonade">Lemonade</span>
+                <span data-price="4.00" class="price">$4.00</span><br/>
+
+                <span data-description="desc">Fresh Squeezed lemons and sugar. nom nom nom.</span>
+            </div></li>
+
+
+
+            <li id='beer'><div data-product="2205" class="product">
+                <span data-name="beer">Beer</span>
+                <span data-price="8.00" class="price">$10.00</span><br/>
+                <span data-option="beer"> $8.00 </span><br/>
+                <span data-description="desc">Why not press the random button and try a random award winning micro??</span>
+            </div></li>
+        </ul>
+    </div>
+    <h3>Order</h3>
+
+    <div id="order">
+        <li id="show_current"><a href="#">Show Current Order</a></li>
+
+        <div id="cartDiv">
+
+        </div>
+        <div>
+            <button id='buy'>
+                <p>Order Now!</p>
+
+            </button>
+
+
+        </div>
+        <li><a href="#" id='fav'>Save as Favorite</a></li>
+
+                <br/>
+            </div>
+        <li class="subNav" ><a href="#">Show Favorite Order</a></li>
+        <li class="subNav"><a href="#">Submit Order</a></li>
+    </div>
+
+
+</div>
+
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.mobile.custom.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/scripting.js"></script>
+
+
+
+</body>
+</html>
